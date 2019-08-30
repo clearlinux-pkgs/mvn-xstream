@@ -4,7 +4,7 @@
 #
 Name     : mvn-xstream
 Version  : 1.4.11.1
-Release  : 2
+Release  : 3
 URL      : https://github.com/x-stream/xstream/archive/XSTREAM_1_4_11_1.tar.gz
 Source0  : https://github.com/x-stream/xstream/archive/XSTREAM_1_4_11_1.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.11.1/xstream-parent-1.4.11.1.pom
