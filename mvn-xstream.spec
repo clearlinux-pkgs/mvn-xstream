@@ -4,17 +4,18 @@
 #
 Name     : mvn-xstream
 Version  : 1.4.11.1
-Release  : 4
+Release  : 5
 URL      : https://github.com/x-stream/xstream/archive/XSTREAM_1_4_11_1.tar.gz
 Source0  : https://github.com/x-stream/xstream/archive/XSTREAM_1_4_11_1.tar.gz
-Source1  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.11.1/xstream-parent-1.4.11.1.pom
-Source2  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.9/xstream-parent-1.4.9.pom
-Source3  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar
-Source4  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.pom
-Source5  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar
-Source6  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.pom
-Source7  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar
-Source8  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.pom
+Source1  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.10/xstream-parent-1.4.10.pom
+Source2  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.11.1/xstream-parent-1.4.11.1.pom
+Source3  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.9/xstream-parent-1.4.9.pom
+Source4  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar
+Source5  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.pom
+Source6  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar
+Source7  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.pom
+Source8  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar
+Source9  : https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -54,29 +55,32 @@ license components for the mvn-xstream package.
 mkdir -p %{buildroot}/usr/share/package-licenses/mvn-xstream
 cp LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-xstream/LICENSE.txt
 cp xstream-distribution/src/content/license.html %{buildroot}/usr/share/package-licenses/mvn-xstream/xstream-distribution_src_content_license.html
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.10
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.10/xstream-parent-1.4.10.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.11.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.11.1/xstream-parent-1.4.11.1.pom
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.11.1/xstream-parent-1.4.11.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.9
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.9/xstream-parent-1.4.9.pom
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.9/xstream-parent-1.4.9.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.pom
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.pom
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.pom
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.pom
 
 
 %files
@@ -84,6 +88,7 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/com/thoughtworks/xstrea
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.10/xstream-parent-1.4.10.pom
 /usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.11.1/xstream-parent-1.4.11.1.pom
 /usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.9/xstream-parent-1.4.9.pom
 /usr/share/java/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar
